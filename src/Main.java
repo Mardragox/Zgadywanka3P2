@@ -43,6 +43,20 @@ public class Main {
         System.out.println("Pomyłka o: " + roznica);
         System.out.println("Wylosowaną liczbą było: "+wylosowanaliczba);
 
-
+        roznica = roznica/10; //dzielenie całkoweite
+        switch (roznica){
+            case 0:
+                System.out.println("Hacker");
+                break;
+            case 1:
+                System.out.println("God");
+                break;
+            case 2:
+                System.out.println("Pro");
+                break;
+            default:
+                System.out.println("Noobek");
+                break;
+        }
     }
 }
