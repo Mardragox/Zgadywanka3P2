@@ -1,0 +1,21 @@
+inicjalizowanie repozytorium
+>git init
+konfigurowanie gita
+>git config user.name "login"
+>git config user.email "mail"
+dodawanie plików
+>git add .
+dodawanie commitów
+>git commit -m "co ma być w commicie"
+logbook
+>git log
+Status
+>git status
+pierwsze dodawanie linka do repozytorium
+>git remote add origin https://link
+zmiana dodanego repo
+>git remote set-url origin https://link
+pierwszt push
+> git push -u origin master
+pushowanie
+>git push
