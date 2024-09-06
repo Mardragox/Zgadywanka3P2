@@ -29,6 +29,13 @@ public class Main {
         System.out.println("Podaj Liczbę");
         int wpisanaliczba = klawiatura.nextInt();
 
+        //instrukcja warunkowa
+        if(wpisanaliczba == wylosowanaliczba) {
+            System.out.println("Wygrana");
+        }
+        else{
+            System.out.println("Przegrałeś");
+        }
 
 
     }
