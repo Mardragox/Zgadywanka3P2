@@ -37,6 +37,12 @@ public class Main {
             System.out.println("Przegrałeś");
         }
 
+        //określanie jak duża była różnica pomiędzy wylosowaną a zgadniętej
+
+        int roznica = wpisanaliczba > wylosowanaliczba ? wpisanaliczba - wylosowanaliczba : wylosowanaliczba - wpisanaliczba;
+        System.out.println("Pomyłka o: " + roznica);
+        System.out.println("Wylosowaną liczbą było: "+wylosowanaliczba);
+
 
     }
 }
