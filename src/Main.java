@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
+        /*
         System.out.println("Hello world!");
         System.out.println("elo byniu");
         System.out.println("elo poter");
@@ -20,6 +20,7 @@ public class Main {
         typy złożone obiekty własności i metody
         string integer kosc
         */
+        /*
         System.out.println(wylosowanaliczba);
 
 
@@ -91,6 +92,26 @@ public class Main {
             System.out.println("Podaj liczbnę");
             wpisanaliczba = klawiatura.nextInt();
         }
-        System.out.println("wugrana");
+        System.out.println("wugrana 🤣🤣🤣🤣🤣🤣");
+        */
+        //pierwsze zadanie domowe
+        //generowanie stringa
+        String haslo ="";
+        String maleLitery = "qwertyuiopasdfghjklzxcvbnm";
+        String duzeLitery = "QWERTYUIOPASDFGHJKLZXCVBNM";
+        String znakiSpecjalne = "!@#$%^&*()_+~`;':[]{}|<,>./?";
+        String cyfry = "1234567890";
+        int losowa;
+        for (int i = 0; i < 5; i++) {
+            losowa = (int) (Math.random() * maleLitery.length());
+            haslo = haslo + maleLitery.charAt(losowa);
+            losowa = (int) (Math.random() * duzeLitery.length());
+            haslo = haslo + duzeLitery.charAt(losowa);
+            losowa = (int) (Math.random() * znakiSpecjalne.length());
+            haslo = haslo + znakiSpecjalne.charAt(losowa);
+            losowa = (int) (Math.random() * cyfry.length());
+            haslo = haslo + cyfry.charAt(losowa);
+        }
+        System.out.println("Wyregenowane Hasło: "+ haslo);
     }
 }
