@@ -79,5 +79,18 @@ public class Main {
             }
         }
 
+        //tak długo aż się uda
+        System.out.println("Podaj Liczbę");
+        wpisanaliczba = klawiatura.nextInt();
+        while (wpisanaliczba != wylosowanaliczba){
+            if(wpisanaliczba>wylosowanaliczba){
+                System.out.println("Za dużo");
+            }else{
+                System.out.println(("Za mało"));
+            }
+            System.out.println("Podaj liczbnę");
+            wpisanaliczba = klawiatura.nextInt();
+        }
+        System.out.println("wugrana");
     }
 }
