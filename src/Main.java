@@ -58,5 +58,26 @@ public class Main {
                 System.out.println("Noobek");
                 break;
         }
+        //wyrażenie switch
+        System.out.println(
+                switch (roznica){
+                    case 0->"Bardzo dobrze";
+                    case 1->"Dobrze";
+                    case 2->"Dość Dobrze";
+                    default -> "Słabo";
+
+                }
+        );
+
+        //zgadywanie 10 razy
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Podaj Liczbę");
+            wpisanaliczba = klawiatura.nextInt();
+            if (wpisanaliczba == wylosowanaliczba){
+                System.out.println("Wygrana");
+                break;
+            }
+        }
+
     }
 }
